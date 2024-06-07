@@ -1,0 +1,30 @@
+group:
+  - kggroup
+
+task: kg_g
+
+output_type: generate_until
+
+dataset_path: json
+dataset_name: null
+dataset_kwargs: 
+  data_files:
+    my_train_file: kb_train.json
+    my_test_file: kb_test.json
+
+training_split: my_train_file
+test_split: my_test_file
+
+doc_to_text: "{{query}}"
+doc_to_target: "{{label}}"
+doc_to_choice: "choices"
+
+num_fewshot: 2
+
+metric_list:
+  - metric: exact_match
+    aggregation: mean
+    higher_is_better: true
+
+metadata:
+  version: 1.0
