@@ -19,12 +19,12 @@ In this project, you will analyze what information LLMs will correctly remember.
 The idea is to generate questions based on a KG of your choice (e.g., Wikidata, DBpedia, etc.) to see if they can be correctly answered.
 When executed on many models, one can see which models can remember many facts.
 More specifically, different kinds of questions can be generated out of the KG, e.g. 
+
 - do LLMs remember more information on persons, rather than places?
 - do LLMs remember more information about cities in the US than in other countries?
 - do LLMs remember more information about entities that are more popular (according to Wiki page views reported by [Wikipedia](https://en.wikipedia.org/wiki/Wikipedia:Popular_pages) or [WikiMedia](https://stats.wikimedia.org/)) than long-tail entities
 - do LLMs remember dates (e.g., birthdate) better than locations (e.g., birthplace) or vice versa
-- can LLMs decide on types of instances
-- can LLMs decide on subclass relations
+- can LLMs decide on types of instances or on subclass relations? Which one works better?
 
 One possible way would be to generate multiple-choice questions (similar to HellaSwag).
 The difficulty level of those questions is something to be explored.
