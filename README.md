@@ -32,7 +32,11 @@ Similarly, the question remains how wrong answers (which still make sense) can b
 In a successful project, we can see which models remember factual information and how biased they are.
 Depending on the questions asked, such an evaluation dataset can also be used to check which models are suitable for ontology construction (see the last question above).
 
-
+## Research Questions
+- RQ1: How well do different pretrained LLMs memorize different topics?
+- RQ2: How well can pretrained LLMs decide on knowledge engineering tasks? 
+- RQ2: How can KGs be leveraged for the evaluation of pretrained LLMs?
+- RQ3: How can we automatically create reference datasets from KGs for the evaluation of pretrained LLMs?
 
 ## Implementation Details
 
